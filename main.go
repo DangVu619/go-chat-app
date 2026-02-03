@@ -21,6 +21,7 @@ func init() {
 
 func main() {
 	server := flag.String("server", "", "http,websocket")
+	fmt.Println(*server)
 	flag.Parse()
 
 	if *server == "http" {
